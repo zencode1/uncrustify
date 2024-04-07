@@ -70,11 +70,15 @@ static chunk_tag_t keywords[] =
    { "__has_include",                   CT_CNG_HASINC,       e_LANG_C | e_LANG_CPP | e_LANG_OC | e_FLAG_PP                                             },
    { "__has_include_next",              CT_CNG_HASINCN,      e_LANG_C | e_LANG_CPP | e_FLAG_PP                                                         },
    { "__inline__",                      CT_QUALIFIER,        e_LANG_C | e_LANG_CPP                                                                     },
+// C++Builder virtual abstract class
+   { "__interface",                     CT_CLASS,            e_LANG_CPP                                                                                },
    { "__nonnull",                       CT_QUALIFIER,        e_LANG_OC                                                                                 },
    { "__nothrow__",                     CT_NOTHROW,          e_LANG_C | e_LANG_CPP                                                                     },
    { "__null_unspecified",              CT_QUALIFIER,        e_LANG_OC                                                                                 },
    { "__nullable",                      CT_QUALIFIER,        e_LANG_OC                                                                                 },
    { "__pragma",                        CT_PP_PRAGMA,        e_LANG_ALL | e_FLAG_PP                                                                    },
+// C++Builder access specifier for published members
+   { "__published",                     CT_ACCESS,           e_LANG_ALLC_NOT_C                                                                         },
    { "__restrict",                      CT_QUALIFIER,        e_LANG_C | e_LANG_CPP                                                                     },
    { "__signed__",                      CT_TYPE,             e_LANG_C | e_LANG_CPP                                                                     },
    { "__strong",                        CT_QUALIFIER,        e_LANG_C | e_LANG_CPP                                                                     },
